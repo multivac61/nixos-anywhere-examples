@@ -5,7 +5,7 @@
 
   outputs = { self, nixpkgs, disko, ... }@attrs: {
     nixosConfigurations.hetzner-cloud = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      system = "aarch64-linux";
       specialArgs = attrs;
       modules = [
         ({modulesPath, ... }: {
